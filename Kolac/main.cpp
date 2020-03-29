@@ -35,12 +35,11 @@ public:
     TipPreliva getPreliv () const{
         return tip;
     }
-    void ispisPreliva(const Preliv &preliv) const{
-        TipPreliva a = preliv.getPreliv();
+    void ispisPreliva(const Preliv& a) const{
         printf("Preliv: ");
-        if (a == COKOLADNI)
+        if (a.tip == COKOLADNI)
             printf("COKOLADNI\n");
-        else if (a == COKOLADNI_SA_SLAGOM)
+        else if (a.tip == COKOLADNI_SA_SLAGOM)
             printf("COKOLADNI SA SLAGOM\n");
         return;
     }
@@ -131,7 +130,7 @@ public:
         printf("PRIPREMLJEN\n");
         break;
     }
-        printf("Temperatura: %i", kolacic.temperatura);
+        printf("Temperatura: %i\n", kolacic.temperatura);
         kolacic.preliv.ispisPreliva(kolacic.preliv);
     }
 
@@ -139,5 +138,7 @@ public:
 
 int main()
 {
+    Kolac kk;
+    kk.ispisKolaca(kk);
     return 0;
 }
