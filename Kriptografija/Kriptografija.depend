@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1585584758 source:c:\users\petar\desktop\new folder\kriptografija\main.cpp
+	<iostream>
+	<time.h>
+
